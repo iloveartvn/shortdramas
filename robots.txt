@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vieon.space/sitemap.xml
