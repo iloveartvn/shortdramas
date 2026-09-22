@@ -151,6 +151,14 @@
 
 
 <style>
+:root {
+    --white: #ffffff;
+    --red: #e21b1b;
+    --red-dark: #a30f0f;
+    --ink: #1a1414;
+    --ink-soft: #6b5f5f;
+    --line: #f0e3e3;
+}
 body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
@@ -190,6 +198,13 @@ body{
     margin-bottom:25px;
 }
 
+.actions {
+    display: inline-grid;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .install-btn{
     display:inline-block;
     background:#e21b1b;
@@ -202,7 +217,26 @@ body{
 }
 
 .install-btn:hover{
-    background:#218838;
+    background:#B51212;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 11px 20px;
+    border-radius: 6px;
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    background: var(--white);
+    color: var(--ink);
+    border: 1px solid var(--line);
+}
+
+.btn-secondary:hover {
+    border-color: var(--red);
+    color: var(--red);
 }
 </style>
 
@@ -222,9 +256,18 @@ Short Dramas & Hub
 아이러브아트
 </div>
 
-<a href="#" onclick="openPlayStore()" class="install-btn">
+<!-- <a href="#" onclick="openPlayStore()" class="install-btn">
 WATCH NOW
-</a>
+</a> -->
+
+<div class="actions">
+    <a href="#" onclick="openPlayStore()" class="install-btn">
+    WATCH NOW
+    </a>
+    <a href="https://top-vn.github.io/phim-rap/" class="btn-secondary">
+        PHIM CHIẾU RẠP VIỆT NAM
+    </a>
+</div>
 
 <script>
 function openPlayStore() {
